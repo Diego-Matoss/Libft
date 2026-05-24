@@ -12,10 +12,10 @@
 
 #include "libft.h"
 
-void *ft_memchr(const void *ptr, int ch, size_t count)
+void	*ft_memchr(const void *ptr, int ch, size_t count)
 {
-	unsigned char *p;
-	size_t i;
+	unsigned char	*p;
+	size_t			i;
 
 	p = (unsigned char *)ptr;
 	i = 0;
@@ -33,12 +33,19 @@ void *ft_memchr(const void *ptr, int ch, size_t count)
 int main(void)
 {
 	char *str = "Hola mundo";
-	int c = 'a';
-	int n = 2;
+	int c = ' ';
+	int n = 6;
 	void *ptr;
 	ptr = memchr(str, c, n);
-	printf("%s\n", (char *)ptr);
+	if (ptr)
+		printf("%s\n", (char *)ptr);
+	else
+		printf("NULL");
+
 	ptr = ft_memchr(str, c, n);
-	printf("%s\n", (char *)ptr);
+	if (ptr)
+		printf("%s\n", (char *)ptr);
+	else
+		printf("NULL");
 	return 0;
 } */
