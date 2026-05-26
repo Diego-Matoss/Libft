@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	ft_move(unsigned char *dest, unsigned char *src, size_t n)
+static void	ft_move(unsigned char *dest, unsigned char *src, size_t n)
 {
 	size_t	i;
 
@@ -24,7 +24,7 @@ void	ft_move(unsigned char *dest, unsigned char *src, size_t n)
 	}
 }
 
-void	ft_move_back(unsigned char *dest, unsigned char *src, size_t n)
+static void	ft_move_back(unsigned char *dest, unsigned char *src, size_t n)
 {
 	int	len;
 
