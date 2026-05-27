@@ -32,7 +32,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (str);
 }
 
-#include <stdio.h>
+/* #include <stdio.h>
 int main(void)
 {
 	char *str1 = "hola";
@@ -40,4 +40,4 @@ int main(void)
 	char *str3 = ft_strjoin(str1, str2);
 	printf("%s\n", str3);
 	return (0);
-}
+} */
