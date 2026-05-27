@@ -27,12 +27,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str = malloc(str_len + 1);
 	if (!str)
 		return (NULL);
-	ft_strlcpy(str, s1, s1_len + 1);
-	ft_strlcpy(str + s1_len, s2, s2_len + 1);
+	ft_memcpy(str, s1, s1_len);
+	ft_memcpy(str + s1_len, s2, s2_len + 1);
 	return (str);
 }
 
-/* #include <stdio.h>
+#include <stdio.h>
 int main(void)
 {
 	char *str1 = "hola";
@@ -40,4 +40,4 @@ int main(void)
 	char *str3 = ft_strjoin(str1, str2);
 	printf("%s\n", str3);
 	return (0);
-} */
+}
