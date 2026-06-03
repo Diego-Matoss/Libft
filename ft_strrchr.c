@@ -14,14 +14,67 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	len;
+	size_t	len;
 
 	len = ft_strlen(s);
-	while (len >= 0)
+	if (c == '\0')
+		return ((char *)&s[len]);
+	while (len-- > 0)
 	{
 		if (s[len] == (char)c)
 			return ((char *)&s[len]);
-		len--;
 	}
 	return (NULL);
 }
+
+/* #include <stdio.h>
+#include <string.h>
+#include "libft.h"
+
+void	test_strrchr(const char *s, int c)
+{
+	char	*original;
+	char	*mine;
+
+	original = strrchr(s, c);
+	mine = ft_strrchr(s, c);
+
+	printf("=====================================\n");
+	printf("String: \"%s\"\n", s);
+	printf("Buscar: '%c' (%d)\n", c, c);
+
+	printf("\nORIGINAL:\n");
+	if (original)
+		printf("Encontrado: \"%s\"\n", original);
+	else
+		printf("NULL\n");
+
+	printf("\nMI FUNCION:\n");
+	if (mine)
+		printf("Encontrado: \"%s\"\n", mine);
+	else
+		printf("NULL\n");
+}
+
+int	main(void)
+{
+	test_strrchr("Hola mundo", 'o');
+
+	test_strrchr("aaaaaa", 'a');
+
+	test_strrchr("42 Madrid", '4');
+
+	test_strrchr("abcdef", 'z');
+
+	test_strrchr("", 'a');
+
+	test_strrchr("test", '\0');
+
+	test_strrchr("abcabcabc", 'b');
+
+	test_strrchr("ultima letra x", 'x');
+
+	test_strrchr("abc", 'a');
+
+	return (0);
+} */
