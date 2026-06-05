@@ -1,159 +1,158 @@
-*Este proyecto ha sido creado como parte del currículo de 42 por dimatos-.*
+*This project has been created as part of the 42 curriculum by dimatos-.*
 
 <div align="center">
 
 # 📚 Libft — @42 Madrid
 
-Mi propia biblioteca estándar de C: una reimplementación de funciones esenciales de la libc y utilidades personalizadas.
+My own C standard library: a reimplementation of essential libc functions along with custom utility functions.
 
 </div>
 
 ---
 
-# 📍 Navegación Rápida
+# 📍 Quick Navigation
 
-* 📄 Descripción
-* 🛠️ Librería al Detalle
-* 🚀 Instrucciones de Compilación
-* 📚 Recursos y Referencias
-
----
-
-# 📄 Descripción
-
-Libft es el primer proyecto fundamental del currículo de 42.
-
-El objetivo principal consiste en reimplementar desde cero una selección de funciones de la biblioteca estándar de C (`libc`), así como desarrollar funciones adicionales que no forman parte de ella pero resultan extremadamente útiles en proyectos posteriores.
-
-A través de este proyecto se profundiza en conceptos fundamentales como:
-
-* Gestión manual de memoria.
-* Manipulación de punteros.
-* Trabajo con cadenas de caracteres.
-* Operaciones sobre bloques de memoria.
-* Conversión de tipos.
-* Estructuras de datos dinámicas mediante listas enlazadas.
-
-Esta librería se convertirá en una herramienta reutilizable que servirá de base para gran parte de los proyectos posteriores del currículo de 42.
+* 📄 Description
+* 🛠️ Library Overview
+* 🚀 Compilation Instructions
+* 📚 Resources and References
 
 ---
 
-# 🛠️ Librería al Detalle
+# 📄 Description
 
-A continuación se detallan las funciones que componen la biblioteca.
+Libft is the first foundational project of the 42 curriculum.
 
-## I. Funciones de libc
+The main objective is to reimplement from scratch a selection of functions from the standard C library (`libc`), while also developing additional utility functions that are not part of the standard library but prove extremely useful in future projects.
 
-### Tipos y Caracteres
+Through this project, several fundamental programming concepts are explored in depth:
 
-| Función    | Descripción                                |
-| ---------- | ------------------------------------------ |
-| ft_isalpha | Comprueba si un carácter es alfabético     |
-| ft_isdigit | Comprueba si un carácter es un dígito      |
-| ft_isalnum | Comprueba si un carácter es alfanumérico   |
-| ft_isascii | Comprueba si un carácter pertenece a ASCII |
-| ft_isprint | Comprueba si un carácter es imprimible     |
-| ft_toupper | Convierte un carácter a mayúscula          |
-| ft_tolower | Convierte un carácter a minúscula          |
+* Manual memory management
+* Pointer manipulation
+* String handling
+* Memory block operations
+* Type conversion
+* Dynamic data structures through linked lists
 
----
-
-### Memoria
-
-| Función    | Descripción                                  |
-| ---------- | -------------------------------------------- |
-| ft_memset  | Rellena un bloque de memoria                 |
-| ft_bzero   | Inicializa memoria a cero                    |
-| ft_memcpy  | Copia memoria sin gestionar solapamiento     |
-| ft_memmove | Copia memoria gestionando solapamiento       |
-| ft_memchr  | Busca un byte dentro de un bloque de memoria |
-| ft_memcmp  | Compara dos bloques de memoria               |
-| ft_calloc  | Reserva memoria inicializada a cero          |
+This library becomes a reusable tool that serves as the foundation for many subsequent projects in the 42 curriculum.
 
 ---
 
-### Strings
+# 🛠️ Library Overview
 
-| Función    | Descripción                               |
+The following sections describe the functions included in the library.
+
+## I. Libc Functions
+
+### Character Classification and Conversion
+
+| Function   | Description                                         |
+| ---------- | --------------------------------------------------- |
+| ft_isalpha | Checks whether a character is alphabetic            |
+| ft_isdigit | Checks whether a character is a digit               |
+| ft_isalnum | Checks whether a character is alphanumeric          |
+| ft_isascii | Checks whether a character belongs to the ASCII set |
+| ft_isprint | Checks whether a character is printable             |
+| ft_toupper | Converts a character to uppercase                   |
+| ft_tolower | Converts a character to lowercase                   |
+
+---
+
+### Memory Functions
+
+| Function   | Description                               |
 | ---------- | ----------------------------------------- |
-| ft_strlen  | Calcula la longitud de una cadena         |
-| ft_strlcpy | Copia una cadena de forma segura          |
-| ft_strlcat | Concatena cadenas de forma segura         |
-| ft_strchr  | Busca la primera aparición de un carácter |
-| ft_strrchr | Busca la última aparición de un carácter  |
-| ft_strncmp | Compara cadenas hasta n caracteres        |
-| ft_strnstr | Busca una subcadena dentro de otra        |
-| ft_strdup  | Duplica una cadena                        |
+| ft_memset  | Fills a block of memory with a value      |
+| ft_bzero   | Sets a block of memory to zero            |
+| ft_memcpy  | Copies memory without handling overlap    |
+| ft_memmove | Copies memory while handling overlap      |
+| ft_memchr  | Searches for a byte within a memory block |
+| ft_memcmp  | Compares two memory blocks                |
+| ft_calloc  | Allocates memory initialized to zero      |
 
 ---
 
-### Conversión
+### String Functions
 
-| Función | Descripción                   |
-| ------- | ----------------------------- |
-| ft_atoi | Convierte una cadena a entero |
-
----
-
-## II. Funciones Adicionales
-
-| Función       | Descripción                                                    |
-| ------------- | -------------------------------------------------------------- |
-| ft_substr     | Extrae una subcadena                                           |
-| ft_strjoin    | Une dos cadenas                                                |
-| ft_strtrim    | Elimina caracteres de los extremos                             |
-| ft_split      | Divide una cadena según un delimitador                         |
-| ft_itoa       | Convierte un entero a cadena                                   |
-| ft_strmapi    | Aplica una función a cada carácter y devuelve una nueva cadena |
-| ft_striteri   | Aplica una función sobre cada carácter de una cadena           |
-| ft_putchar_fd | Escribe un carácter en un file descriptor                      |
-| ft_putstr_fd  | Escribe una cadena en un file descriptor                       |
-| ft_putendl_fd | Escribe una cadena seguida de salto de línea                   |
-| ft_putnbr_fd  | Escribe un número en un file descriptor                        |
+| Function   | Description                                    |
+| ---------- | ---------------------------------------------- |
+| ft_strlen  | Calculates the length of a string              |
+| ft_strlcpy | Safely copies a string                         |
+| ft_strlcat | Safely concatenates strings                    |
+| ft_strchr  | Finds the first occurrence of a character      |
+| ft_strrchr | Finds the last occurrence of a character       |
+| ft_strncmp | Compares strings up to n characters            |
+| ft_strnstr | Searches for a substring within another string |
+| ft_strdup  | Duplicates a string                            |
 
 ---
 
-## III. Bonus — Listas Enlazadas
+### Conversion Functions
 
-| Función         | Descripción                                  |
+| Function | Description                       |
+| -------- | --------------------------------- |
+| ft_atoi  | Converts a string into an integer |
+
+---
+
+## II. Additional Functions
+
+| Function      | Description                                                   |
+| ------------- | ------------------------------------------------------------- |
+| ft_substr     | Extracts a substring                                          |
+| ft_strjoin    | Joins two strings                                             |
+| ft_strtrim    | Removes characters from both ends of a string                 |
+| ft_split      | Splits a string using a delimiter                             |
+| ft_itoa       | Converts an integer into a string                             |
+| ft_strmapi    | Applies a function to each character and returns a new string |
+| ft_striteri   | Applies a function to each character of a string              |
+| ft_putchar_fd | Writes a character to a file descriptor                       |
+| ft_putstr_fd  | Writes a string to a file descriptor                          |
+| ft_putendl_fd | Writes a string followed by a newline                         |
+| ft_putnbr_fd  | Writes a number to a file descriptor                          |
+
+---
+
+## III. Bonus — Linked Lists
+
+| Function        | Description                                  |
 | --------------- | -------------------------------------------- |
-| ft_lstnew       | Crea un nuevo nodo                           |
-| ft_lstadd_front | Inserta un nodo al principio                 |
-| ft_lstsize      | Cuenta los nodos de una lista                |
-| ft_lstlast      | Obtiene el último nodo                       |
-| ft_lstadd_back  | Inserta un nodo al final                     |
-| ft_lstdelone    | Elimina un nodo                              |
-| ft_lstclear     | Elimina una lista completa                   |
-| ft_lstiter      | Recorre una lista aplicando una función      |
-| ft_lstmap       | Crea una nueva lista transformando cada nodo |
+| ft_lstnew       | Creates a new node                           |
+| ft_lstadd_front | Adds a node at the beginning of a list       |
+| ft_lstsize      | Counts the number of nodes in a list         |
+| ft_lstlast      | Returns the last node of a list              |
+| ft_lstadd_back  | Adds a node at the end of a list             |
+| ft_lstdelone    | Deletes a single node                        |
+| ft_lstclear     | Deletes an entire list                       |
+| ft_lstiter      | Iterates through a list applying a function  |
+| ft_lstmap       | Creates a new list by transforming each node |
 
 ---
 
-# 🚀 Instrucciones
+# 🚀 Instructions
 
-## Estructura del Makefile
+## Makefile Structure
 
-El proyecto cuenta con un Makefile automatizado para generar la librería estática.
+The project includes an automated Makefile used to generate the static library.
 
-### Reglas disponibles
+### Available Rules
 
-| Comando     | Acción                         |
-| ----------- | ------------------------------ |
-| make        | Compila la librería            |
-| make bonus  | Compila la parte bonus         |
-| make clean  | Elimina archivos objeto        |
-| make fclean | Elimina objetos y la librería  |
-| make re     | Recompila el proyecto completo |
+| Command     | Action                               |
+| ----------- | ------------------------------------ |
+| make        | Builds the library                   |
+| make clean  | Removes object files                 |
+| make fclean | Removes object files and the library |
+| make re     | Rebuilds the entire project          |
 
 ---
 
-## Compilación
+## Compilation
 
 ```bash
 make
 ```
 
-Generará:
+This generates:
 
 ```text
 libft.a
@@ -161,9 +160,9 @@ libft.a
 
 ---
 
-# 📚 Recursos y Referencias
+# 📚 Resources and References
 
-## Documentación
+## Documentation
 
 * ISO C Standard
 * The C Programming Language — Kernighan & Ritchie
@@ -173,31 +172,29 @@ libft.a
 
 ---
 
-## Herramientas de Testeo
+## Testing Tools
 
-* libftTester de Tripouille
-* libft-tester de mapena-z
+* Tripouille's libftTester
+* mapena-z's libft-tester
 * Norminette
 
 ---
 
-## Uso de Inteligencia Artificial
+## Use of Artificial Intelligence
 
-En cumplimiento de los requisitos del proyecto:
+In compliance with the project requirements:
 
-La Inteligencia Artificial se ha utilizado exclusivamente como herramienta de apoyo para:
+Artificial Intelligence was used exclusively as a supporting tool for:
 
-* Comprender el comportamiento de determinadas funciones estándar.
-* Resolver dudas conceptuales sobre memoria, punteros y listas enlazadas.
-* Analizar casos límite (*edge cases*).
-* Revisar documentación y mejorar la calidad del README.
+* Understanding the behavior of certain standard library functions.
+* Clarifying concepts related to memory management, pointers, and linked lists.
+* Analyzing edge cases.
+* Reviewing documentation and improving the quality of this README.
 
-La implementación, depuración y validación final de todas las funciones ha sido realizada manualmente por el autor.
+The implementation, debugging, and final validation of all functions were performed manually by the author.
 
 ---
 
-# 👨‍💻 Autor
+# 👨‍💻 Author
 
 **Diego Matos**
-
-42 Madrid
