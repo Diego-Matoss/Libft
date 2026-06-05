@@ -14,15 +14,14 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t	len;
+	int	len;
 
 	len = ft_strlen(s);
-	if (c == '\0')
-		return ((char *)&s[len]);
-	while (len-- > 0)
+	while (len >= 0)
 	{
 		if (s[len] == (char)c)
 			return ((char *)&s[len]);
+		len--;
 	}
 	return (NULL);
 }
@@ -68,7 +67,7 @@ int	main(void)
 
 	test_strrchr("", 'a');
 
-	test_strrchr("test", '\0');
+	test_strrchr("teste", '\0');
 
 	test_strrchr("abcabcabc", 'b');
 

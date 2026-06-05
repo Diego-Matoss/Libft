@@ -22,7 +22,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	str_length = ft_strlen(s);
 	if (start >= str_length)
-		sub_length = 0;
+		return (ft_strdup (""));
 	else if (len > str_length - start)
 		sub_length = str_length - start;
 	else
@@ -37,8 +37,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 /* #include <stdio.h>
 int main(void)
 {
-	char string[] = "Hola mundo";
-	char *substr = ft_substr(string, 0, 3);
+	//char string[] = "Hola mundo";
+	char *substr = ft_substr("hola", 4294967295, 0);
 	printf("%s\n", substr);
 	return (0);
 } */
