@@ -12,14 +12,14 @@ My own C standard library: a reimplementation of essential libc functions along 
 
 # 📍 Quick Navigation
 
-* 📄 Description
-* 🛠️ Library Overview
-* 🚀 Compilation Instructions
-* 📚 Resources and References
+- [Description](#description)
+- [Library Overview](#library-overview)
+- [Instructions](#instructions)
+- [Resources and References](#resources-and-references)
 
 ---
 
-# 📄 Description
+# Description
 
 Libft is the first foundational project of the 42 curriculum.
 
@@ -38,7 +38,7 @@ This library becomes a reusable tool that serves as the foundation for many subs
 
 ---
 
-# 🛠️ Library Overview
+# Library Overview
 
 The following sections describe the functions included in the library.
 
@@ -129,7 +129,7 @@ The following sections describe the functions included in the library.
 
 ---
 
-# 🚀 Instructions
+# Instructions
 
 ## Makefile Structure
 
@@ -160,7 +160,7 @@ libft.a
 
 ---
 
-# 📚 Resources and References
+# Resources and References
 
 ## Documentation
 
@@ -176,7 +176,6 @@ libft.a
 
 * Tripouille's libftTester
 * mapena-z's libft-tester
-* Norminette
 
 ---
 
