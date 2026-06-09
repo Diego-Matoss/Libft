@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Deletes all nodes of a linked list using a delete function.
+** Sets list pointer to NULL. Does nothing if list or delete function is NULL.
+*/
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*node;

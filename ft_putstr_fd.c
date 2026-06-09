@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Writes a string to a file descriptor.
+** Outputs characters one by one. Does nothing if string is NULL.
+*/
 void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;

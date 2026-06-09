@@ -22,6 +22,10 @@ static size_t	get_len(char *dst, size_t dstsize)
 	return (i);
 }
 
+/*
+** Concatenates two strings safely with size limit.
+** Returns total length of concatenated string. Truncates if necessary.
+*/
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	dst_len;

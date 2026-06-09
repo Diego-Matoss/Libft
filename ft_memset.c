@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Fills memory area with a specific byte value.
+** Returns the pointer to the memory area.
+*/
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*dest;

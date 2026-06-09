@@ -18,6 +18,10 @@ static	void	*clear(t_list *list, void (*del)(void *))
 	return (NULL);
 }
 
+/*
+** Creates a new list by applying a function to each element's content.
+** Returns a new list or NULL if memory allocation fails.
+*/
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	void	*new_content;

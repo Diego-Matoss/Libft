@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Fills memory area with zero bytes.
+** Similar to memset with value 0.
+*/
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*str;

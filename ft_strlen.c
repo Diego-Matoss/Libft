@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Calculates the length of a string.
+** Returns the number of characters before the null terminator.
+*/
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;

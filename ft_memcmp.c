@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Compares two memory areas byte by byte.
+** Returns 0 if equal, or difference of first non-matching bytes.
+*/
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*str1;

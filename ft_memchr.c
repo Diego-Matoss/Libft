@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Searches for a byte value in memory.
+** Returns pointer to first occurrence or NULL if not found.
+*/
 void	*ft_memchr(const void *ptr, int ch, size_t count)
 {
 	unsigned char	*p;

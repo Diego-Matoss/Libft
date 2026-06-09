@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Writes an integer to a file descriptor.
+** Handles negative numbers and uses recursion for digit separation.
+*/
 void	ft_putnbr_fd(int n, int fd)
 {
 	long	nb;

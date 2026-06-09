@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Extracts a substring starting at position 'start' with maximum length 'len'.
+** Returns a new dynamically allocated string or NULL on failure.
+*/
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	str_length;

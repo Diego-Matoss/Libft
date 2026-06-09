@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Calculates the size (number of nodes) of a linked list.
+** Returns the count of nodes or 0 if list is empty.
+*/
 int	ft_lstsize(t_list *lst)
 {
 	int	i;

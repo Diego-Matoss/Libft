@@ -84,6 +84,10 @@ static char	**fill_split(char **split, char const *s, char c)
 	return (split);
 }
 
+/*
+** Splits a string by a delimiter into an array of strings.
+** Returns a NULL-terminated array of dynamically allocated strings.
+*/
 char	**ft_split(char const *s, char c)
 {
 	char	**split;

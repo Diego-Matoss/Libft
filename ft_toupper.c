@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Converts a lowercase letter to uppercase.
+** Returns the uppercase character or original if not lowercase.
+*/
 int	ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)

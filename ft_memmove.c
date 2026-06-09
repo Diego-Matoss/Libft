@@ -36,6 +36,10 @@ static void	ft_move_back(unsigned char *dest, unsigned char *src, size_t n)
 	}
 }
 
+/*
+** Copies memory from source to destination, handling overlapping areas safely.
+** Detects overlap and copies in appropriate direction to prevent corruption.
+*/
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*new_dest;

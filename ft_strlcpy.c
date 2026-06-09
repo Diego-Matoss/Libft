@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Copies a string safely with size limit.
+** Returns the length of the source string. Truncates if necessary.
+*/
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	src_len;

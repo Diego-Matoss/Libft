@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Copies memory from source to destination.
+** Does NOT handle overlapping memory areas. Use ft_memmove for overlaps.
+*/
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*destination;

@@ -26,6 +26,10 @@ static int	ft_char_inset(char c, char const *set)
 	return (0);
 }
 
+/*
+** Removes characters from the beginning and end of a string based on a charset.
+** Returns a new dynamically allocated trimmed string.
+*/
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;

@@ -32,6 +32,10 @@ static size_t	count_len(long n)
 	return (i);
 }
 
+/*
+** Converts an integer to a string representation.
+** Handles negative numbers and allocates memory for the result.
+*/
 char	*ft_itoa(int n)
 {
 	char	*array;

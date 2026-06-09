@@ -19,6 +19,10 @@ static int	ft_isspace(const char chr)
 	return (0);
 }
 
+/*
+** Converts a string to an integer.
+** Handles whitespace, signs, and stops at non-digit characters.
+*/
 int	ft_atoi(const char *nptr)
 {
 	int	i;

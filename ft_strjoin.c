@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Concatenates two strings into a new dynamically allocated string.
+** Returns NULL if either input is NULL or memory allocation fails.
+*/
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char		*str;

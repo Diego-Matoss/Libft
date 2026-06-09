@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Adds a new node at the beginning of a linked list.
+** Does nothing if list or new node is NULL.
+*/
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!lst || !new)

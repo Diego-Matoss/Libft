@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Allocates memory for an array and initializes it to zero.
+** Prevents integer overflow and returns NULL on failure.
+*/
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;

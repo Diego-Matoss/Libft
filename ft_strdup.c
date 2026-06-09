@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Duplicates a string by allocating new memory and copying content.
+** Returns NULL if memory allocation fails.
+*/
 char	*ft_strdup(const char *s)
 {
 	size_t	len;

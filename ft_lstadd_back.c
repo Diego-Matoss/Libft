@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Adds a new node at the end of a linked list.
+** Does nothing if list or new node is NULL.
+*/
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;

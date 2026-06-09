@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Compares two strings up to n characters.
+** Returns 0 if equal, or difference of first non-matching characters.
+*/
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t			i;

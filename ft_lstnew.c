@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Creates a new list node with given content.
+** Returns NULL if memory allocation fails.
+*/
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*list;

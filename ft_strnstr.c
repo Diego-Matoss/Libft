@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Searches for a substring within a string up to n bytes.
+** Returns pointer to first occurrence or NULL if not found.
+*/
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
